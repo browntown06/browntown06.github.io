@@ -1,3 +1,4 @@
 # browntown06.github.io
 
-this is going to go horribly
+Howdy howdy!
+The URL is browntown06.github.io
