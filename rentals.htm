@@ -1,51 +1,112 @@
-<!-- 
-Ben Brown
-Southern Illinois University
-Developed 01/22/2025
-Rentals page for Brown-Town Silly Little Bike Shop
--->
-
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Ben Brown
+     Southern Illinois University
+     Developed 01/22/2025
+     Not yet fully developed/tested -->
+
 <head>
+    <!-- meta tags for website descriptions -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rent top-quality bikes for daily or weekly use!">
-    <meta name="keywords" content="bike rental, street bikes, mountain bikes, rent a bike">
-    <title>Bike Rentals - Brown-Town Silly Little Bike Shop</title>
+    <meta name="description" content="Browse our rental options for street and mountain bikes.">
+    <meta name="keywords" content="bicycle rental, bike rental, street bike, mountain bike">
+
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styling.css">
+    
+    <!-- Main title when you enter the site -->
+    <title>Bike Rentals - Brown-Town Silly Little Bike Shop</title>
+    
+    <style>
+        body {
+            background-color: #f0f0f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .bike-options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .bike {
+            width: 48%;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Bike Rentals</h1>
-    <p>Looking for endless silly fun? Rent a bike today and explore the city or trails!</p>
+    <header>
+        <h1>Bike Rentals</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
     
     <div class="container">
-        <div class="column">
-            <h2>Street Bikes</h2>
-            <h3>Speedster 500</h3>
-            <p>A basic road bike perfect for city cruising and gettin' around.</p>
-            <p><strong>Price:</strong> $20/day or $100/week</p>
-            <h3>Urban Commuter</h3>
-            <p>A comfortable bike with a smooth ride, ideal for urban areas.</p>
-            <p><strong>Price:</strong> $18/day or $90/week</p>
+        <h2>Choose Your Bike</h2>
+        <div class="bike-options">
+            <div class="bike">
+                <h3>Street Bike 1</h3>
+                <img src="img_dump/street_bike1.jpg" alt="Street Bike 1">
+                <p>Perfect for city cruising with lightweight frame and smooth gears.</p>
+                <p><strong>Price:</strong> $20/day or $100/week</p>
+            </div>
+            <div class="bike">
+                <h3>Street Bike 2</h3>
+                <img src="img_dump/street_bike2.jpg" alt="Street Bike 2">
+                <p>High-speed performance bike for an urban adventure.</p>
+                <p><strong>Price:</strong> $25/day or $120/week</p>
+            </div>
         </div>
-        
-        <div class="column">
-            <h2>Mountain Bikes</h2>
-            <h3>Trail Blazer</h3>
-            <p>Durable and sturdy, built for off-road adventures.</p>
-            <p><strong>Price:</strong> $25/day or $120/week</p>
-            <h3>Rock Hopper</h3>
-            <p>A rugged bike designed for rough terrain and steep trails.</p>
-            <p><strong>Price:</strong> $22/day or $110/week</p>
+        <div class="bike-options">
+            <div class="bike">
+                <h3>Mountain Bike 1</h3>
+                <img src="img_dump/mountain_bike1.jpg" alt="Mountain Bike 1">
+                <p>Durable and sturdy for tough terrains and trails.</p>
+                <p><strong>Price:</strong> $30/day or $150/week</p>
+            </div>
+            <div class="bike">
+                <h3>Mountain Bike 2</h3>
+                <img src="img_dump/mountain_bike2.jpg" alt="Mountain Bike 2">
+                <p>Full suspension and shock absorption for extreme trails.</p>
+                <p><strong>Price:</strong> $35/day or $180/week</p>
+            </div>
         </div>
     </div>
-
-    <h2>Extras</h2>
-    <p>Helmets: $5/day</p>
-    <p>Bike Locks: Included</p>
-    
-    <h2>Rental Terms</h2>
-    <p>All rentals require a valid ID and a refundable deposit. Bikes must be returned in the condition they were rented.</p>
 </body>
+
 </html>
