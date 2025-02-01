@@ -5,33 +5,87 @@ Developed 01/22/2025
 CSS for Brown-Town Silly Little Bike Shop website
 */
 
-/* Apply a 10-pixel margin to the entire page */
+/* Center the entire page and apply a consistent background color */
 body {
-    margin: 10px;
-    width: 725px;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f0f0f5; /* Light grayish background */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Apply a 10-pixel padding to all headings */
+/* Container to align content centrally */
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+    padding: 20px 0;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Heading styles with padding */
 h1, h2, h3, h4, h5, h6 {
     padding: 10px;
 }
 
-/* Set a 5-pixel left and right padding to paragraph tags */
+/* Paragraph styles with padding */
 p {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-/* Apply a 10-pixel left padding to all list items */
+/* List item padding */
 li {
     padding-left: 10px;
 }
 
-/* Apply a blue border with rounded corners to the image */
+/* Styling for bike options */
+.bike-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bike {
+    width: 48%;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling with rounded corners */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Specific styling for the bike crash image */
 img[src*="bike_crash_no1.jpg"] {
     border: 3px solid blue;
     border-radius: 10px;
-    position: relative; /* Can be adjusted as needed */
 }
-
