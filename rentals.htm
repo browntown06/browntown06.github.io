@@ -1,112 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
+/* 
+Ben Brown
+Southern Illinois University
+Developed 01/22/2025
+CSS for Brown-Town Silly Little Bike Shop website
+*/
 
-<!-- Ben Brown
-     Southern Illinois University
-     Developed 01/22/2025
-     Not yet fully developed/tested -->
+/* General body styling to center content and improve layout */
+body {
+    background-color: #f0f0f5; /* Light grayish background */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
 
-<head>
-    <!-- meta tags for website descriptions -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse our rental options for street and mountain bikes.">
-    <meta name="keywords" content="bicycle rental, bike rental, street bike, mountain bike">
+/* Main content container for a clean and professional look */
+.container {
+    width: 90%;
+    max-width: 900px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 60px;
+}
 
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styling.css">
-    
-    <!-- Main title when you enter the site -->
-    <title>Bike Rentals - Brown-Town Silly Little Bike Shop</title>
-    
-    <style>
-        body {
-            background-color: #f0f0f5;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .bike-options {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .bike {
-            width: 48%;
-            background-color: #ffffff;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #333;
-        }
-    </style>
-</head>
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
 
-<body>
-    <header>
-        <h1>Bike Rentals</h1>
-        <nav>
-            <ul>
-                <li><a href="browntown06.github.io">Return home</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="container">
-        <h2>Choose Your Bicycle:</h2>
-        <div class="bike-options">
-            <div class="bike">
-                <h3>Street Bike 1</h3>
-                <img src="img_dump/street_bike1.jpg" alt="Street Bike 1">
-                <p>Perfect for city cruising with lightweight frame and smooth gears.</p>
-                <p><strong>Price:</strong> $20/day or $100/week</p>
-            </div>
-            <div class="bike">
-                <h3>Street Bike 2</h3>
-                <img src="img_dump/street_bike2.jpg" alt="Street Bike 2">
-                <p>High-speed performance bike for an urban adventure.</p>
-                <p><strong>Price:</strong> $25/day or $120/week</p>
-            </div>
-        </div>
-        <div class="bike-options">
-            <div class="bike">
-                <h3>Mountain Bike 1</h3>
-                <img src="img_dump/Mt_bike1.jpg" alt="Mountain Bike 1">
-                <p>Durable and sturdy for tough terrains and trails.</p>
-                <p><strong>Price:</strong> $30/day or $150/week</p>
-            </div>
-            <div class="bike">
-                <h3>Mountain Bike 2</h3>
-                <img src="img_dump/Mt_bike2.jpg" alt="Mountain Bike 2">
-                <p>Full suspension and shock absorption for extreme trails.</p>
-                <p><strong>Price:</strong> $35/day or $180/week</p>
-            </div>
-        </div>
-    </div>
-</body>
+/* Navigation styling for better spacing and readability */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
 
-</html>
+/* Heading styles with consistent spacing */
+h1, h2, h3, h4, h5, h6 {
+    padding: 15px 0;
+    text-align: center;
+    color: #222;
+}
+
+/* Paragraph styles with improved readability */
+p {
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    text-align: center;
+}
+
+/* List item padding for cleaner structure */
+li {
+    padding-left: 15px;
+}
+
+/* Main page layout centered properly */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Ensure the image and safety link are centered */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Styling for the rental page layout */
+.bike-options-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px; /* Push content down for better spacing */
+    gap: 40px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.bike-category {
+    width: 45%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image styling with proper spacing */
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Specific styling for the bike crash image */
+img[src*="bike_crash_no1.jpg"] {
+    border: 4px solid blue;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* Additional margin for better spacing between sections */
+.section {
+    margin-bottom: 40px;
+}
