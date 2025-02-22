@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Ben Brown
-     Southern Illinois University
-     Developed 01/22/2025
-     Not yet fully developed/tested -->
-
 <head>
-    <!-- meta tags for website descriptions -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Browse our rental options for street and mountain bikes.">
     <meta name="keywords" content="bicycle rental, bike rental, street bike, mountain bike">
-
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styling.css">
-    
-    <!-- Main title when you enter the site -->
     <title>Bike Rentals - Brown-Town Silly Little Bike Shop</title>
-    
+    <link rel="stylesheet" href="styling.css">
+
+    <!-- jQuery & SlickNav -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+
     <style>
+        /* Hide the original menu */
+        #menu {
+            display: none;
+        }
+
+        /* Ensure the SlickNav menu is visible */
+        .slicknav_menu {
+            display: block;
+        }
+
         body {
             background-color: #f0f0f5;
             font-family: Arial, sans-serif;
@@ -50,28 +54,24 @@
             max-width: 100%;
             border-radius: 10px;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #333;
-        }
     </style>
-</head>
 
+    <script>
+        $(document).ready(function() {
+            $('#menu').slicknav();
+        });
+    </script>
+</head>
 <body>
     <header>
         <h1>Bike Rentals</h1>
         <nav>
-            <ul>
-                <li><a href="browntown06.github.io">Return home</a></li>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -108,5 +108,4 @@
         </div>
     </div>
 </body>
-
 </html>
