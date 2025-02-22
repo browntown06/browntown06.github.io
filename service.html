@@ -1,20 +1,46 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Service - Brown-Town Bike Shop</title>
-        <link rel="stylesheet" href="styling.css">
-    </head>
-    <body>
-        <header>
-            <h1>Bike Service</h1>
-            <nav>
-                <ul id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="rentals.html">Rentals</a></li>
-                    <li><a href="sales.html">Sales</a></li>
-                    <li><a href="service.html">Service</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </body>
-    </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - Brown-Town Bike Shop</title>
+    <link rel="stylesheet" href="styling.css">
+
+    <!-- jQuery & SlickNav -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+
+    <style>
+        /* Hide the original menu */
+        #menu {
+            display: none;
+        }
+
+        /* Ensure the SlickNav menu is visible */
+        .slicknav_menu {
+            display: block;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $('#menu').slicknav();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bike Service</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
