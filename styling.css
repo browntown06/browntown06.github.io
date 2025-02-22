@@ -5,6 +5,15 @@ Developed 01/22/2025
 CSS for Brown-Town Silly Little Bike Shop website
 */
 
+
+
+/* Hide default navigation when SlickNav is active */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+}
+
 /* General body styling to center content and improve layout */
 body {
     background-color: #f0f0f5; /* Light grayish background */
