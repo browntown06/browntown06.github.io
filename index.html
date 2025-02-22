@@ -1,58 +1,68 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    
-    <!-- Ben Brown
-         Southern Illinois University
-         Developed 01/22/2025
-         !!! WORK IN PROGRESS !!! -->
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Browse our wide variety of awesome bikes and decide the best one for you!">
-        <meta name="keywords" content="bicycle, bike, bikes, store, bike supplies">
-    
-        <title>Brown-Town Silly Little Bike Shop</title>
-    
-        <!-- Link to CSS -->
-        <link rel="stylesheet" href="styling.css">
-    
-        <!-- jQuery & SlickNav -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
-    
-        <script>
-            $(document).ready(function() {
-                $('#menu').slicknav();
-            });
-        </script>
-    
-    </head>
-    
-    <body>
-        <header>
-            <h1>Brown-Town Silly Little Bike Shop</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-        </header>
+<!-- Ben Brown
+     Southern Illinois University
+     Developed 01/22/2025
+     !!! WORK IN PROGRESS !!! -->
 
-        <nav>
-    <ul id="menu" class="slicknav_menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="rentals.html">Rentals</a></li>
-        <li><a href="sales.html">Sales</a></li>
-        <li><a href="service.html">Service</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-    </ul>
-</nav>
-    
-        <p>Find us at 1365 Douglas Dr, Carbondale, IL 62901. Ask for Ben Brown!</p>
-        <p>Stay safe out there!</p>
-    
-        <img src="img_dump/bike_crash_no1.jpg" alt="Bike crash warning" class="responsive-img">
-    
-        <p><a href="https://www.nhtsa.gov/road-safety/bicycle-safety">Click here for bike safety info</a></p>
-    
-    </body>
-    </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our wide variety of awesome bikes and decide the best one for you!">
+    <meta name="keywords" content="bicycle, bike, bikes, store, bike supplies">
 
+    <title>Brown-Town Silly Little Bike Shop</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styling.css">
+
+    <!-- jQuery & SlickNav -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+
+    <style>
+        /* Hide the original menu */
+        #menu {
+            display: none;
+        }
+
+        /* Ensure the SlickNav menu is visible */
+        .slicknav_menu {
+            display: block;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $('#menu').slicknav();
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Brown-Town Silly Little Bike Shop</h1>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <p>Find us at 1365 Douglas Dr, Carbondale, IL 62901. Ask for Ben Brown!</p>
+    <p>Stay safe out there!</p>
+
+    <img src="img_dump/bike_crash_no1.jpg" alt="Bike crash warning" class="responsive-img">
+
+    <p><a href="https://www.nhtsa.gov/road-safety/bicycle-safety">Click here for bike safety info</a></p>
+
+</body>
+</html>
