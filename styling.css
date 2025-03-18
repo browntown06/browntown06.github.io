@@ -74,25 +74,6 @@ li {
     width: 100%;
 }
 
-/* Menu overlay image positioned under the SlickNav menu */
-.menu-overlay {
-    position: absolute;
-    top: 50px; /* Adjust based on SlickNav's height */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 0; /* Keep it behind the menu */
-    width: 100%;
-    max-width: 900px;
-}
-
-.menu-overlay img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    border-radius: 15px; /* Rounded corners */
-    transition: opacity 0.3s ease-in-out;
-}
-
 /* Ensure the image and safety link are centered */
 .image-container {
     display: flex;
