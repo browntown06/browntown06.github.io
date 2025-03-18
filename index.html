@@ -64,20 +64,23 @@
          <img id="main-image" src="img_dump/bike_crash_no1.jpg" alt="Bike crash warning" class="responsive-img">
     </div>
 
-     <script>
+    <script>
     document.addEventListener("DOMContentLoaded", function () {
         let mainImage = document.getElementById("main-image");
 
-        mainImage.addEventListener("mouseover", function () {
-            mainImage.src = "crazy_dude.jpg"; // Image changes on hover
+        // Preload hover image to prevent flickering
+        let hoverImage = new Image();
+        hoverImage.src = "crazy_dude.jpg";
+
+        mainImage.addEventListener("mouseenter", function () {
+            mainImage.src = hoverImage.src;
         });
 
-        mainImage.addEventListener("mouseout", function () {
-            mainImage.src = "image1.jpg"; // Reverts when the mouse leaves
+        mainImage.addEventListener("mouseleave", function () {
+            mainImage.src = "image1.jpg";
         });
     });
 </script>
-
      
     <p><a href="https://www.nhtsa.gov/road-safety/bicycle-safety">Click here for bike safety info</a></p>
 
