@@ -23,6 +23,11 @@ body {
     align-items: center;
     min-height: 100vh;
     justify-content: flex-start;
+
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Main content container for a clean and professional look */
