@@ -85,6 +85,18 @@ li {
     width: 100%;
 }
 
+#main-image {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    border-radius: 15px; /* Rounded corners */
+    transition: opacity 0.3s ease-in-out;
+}
+
+#main-image:hover {
+    content: url('crazy_dude.jpg'); /* Change image on hover */
+}
+
+
 /* Styling for the rental page layout */
 .bike-options-container {
     display: flex;
