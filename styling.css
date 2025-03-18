@@ -88,7 +88,7 @@ li {
     width: 100%;
     max-width: 600px;
     height: 400px; /* Adjust based on image aspect ratio */
-    background-image: url('bike_crash_no1.jpg'); /* Default image */
+    background-image: url('img_dump/bike_crash_no1.jpg'); /* Default image */
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -97,7 +97,7 @@ li {
 
 /* Change image on hover */
 #main-image:hover {
-    background-image: url('crazy_dude.jpg'); /* Hover image */
+    background-image: url('img_dump/crazy_dude.jpg'); /* Hover image */
 }
 
 /* Make the container responsive */
