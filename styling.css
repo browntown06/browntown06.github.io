@@ -83,12 +83,21 @@ li {
     width: 100%;
 }
 
-/* Main image with rollover effect */
+/* Main image as a div to prevent flickering */
 #main-image {
     width: 100%;
     max-width: 600px;
+    height: 400px; /* Adjust based on image aspect ratio */
+    background-image: url('image1.jpg'); /* Default image */
+    background-size: cover;
+    background-position: center;
     border-radius: 15px;
-    transition: opacity 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in-out;
+}
+
+/* Change image on hover */
+#main-image:hover {
+    background-image: url('crazy_dude.jpg'); /* Hover image */
 }
 
 /* Make the container responsive */
