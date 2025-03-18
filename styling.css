@@ -30,6 +30,10 @@ body {
     background-repeat: no-repeat;
 }
 
+* {
+    color: red;
+}
+
 .bg-hover {
     width: 200px; /* Adjust as needed */
     height: 200px;
