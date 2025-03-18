@@ -30,6 +30,17 @@ body {
     background-repeat: no-repeat;
 }
 
+.bg-hover {
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+    background: url('img_dump/background.jpg') no-repeat center/cover;
+    transition: background 0.3s ease-in-out;
+}
+
+.bg-hover:hover {
+    background: url('crazy_dude.jpg') no-repeat center/cover;
+}
+
 /* Main content container for a clean and professional look */
 .container {
     width: 90%;
