@@ -46,10 +46,6 @@
     <header>
         <h1>Brown-Town Silly Little Bike Shop</h1>
     </header>
-
-     <div class="menu-overlay">
-          <img id="overlay-image" src="img_dump/bike_shop.jpg" alt="Bike Shop Logo">
-     </div>
      
     <nav>
         <ul id="menu">
@@ -67,25 +63,6 @@
     <div class="image-container">
          <img id="main-image" src="img_dump/bike_crash_no1.jpg" alt="Bike crash warning" class="responsive-img">
     </div>
-
-     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let overlayImage = document.getElementById("overlay-image");
-
-        // Preload hover image to prevent flickering
-        let hoverImage = new Image();
-        hoverImage.src = "img_dump/bike_shop_hover.jpg";
-
-        overlayImage.addEventListener("mouseenter", function () {
-            overlayImage.src = hoverImage.src;
-        });
-
-        overlayImage.addEventListener("mouseleave", function () {
-            overlayImage.src = "img_dump/bike_shop.jpg";
-        });
-    });
-    </script>
-
      
     <script>
     document.addEventListener("DOMContentLoaded", function () {
