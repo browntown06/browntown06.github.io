@@ -5,8 +5,6 @@ Developed 01/22/2025
 CSS for Brown-Town Silly Little Bike Shop website
 */
 
-
-
 /* Hide default navigation when SlickNav is active */
 @media screen and (max-width: 768px) {
     nav ul {
@@ -85,6 +83,7 @@ li {
     width: 100%;
 }
 
+/* Main image with rollover effect */
 #main-image {
     width: 100%;
     max-width: 600px;
@@ -92,35 +91,29 @@ li {
     transition: opacity 0.3s ease-in-out;
 }
 
+/* Make the container responsive */
 .image-container {
     display: inline-block;
     position: relative;
 }
 
-.image-container img {
+/* General image styling */
+img {
+    max-width: 100%;
+    border-radius: 12px;
     display: block;
+    margin: 0 auto;
 }
 
-/* Preload hover image by setting it as a background */
-.image-container::after {
-    content: "";
-    background: url('crazy_dude.jpg') no-repeat center center;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+/* Specific styling for the bike crash image */
+img[src*="bike_crash_no1.jpg"] {
+    border: 4px solid blue;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.image-container:hover::after {
-    opacity: 1;
-}
-
-
 
 /* Styling for the rental page layout */
 .bike-options-container {
@@ -144,24 +137,6 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-/* Image styling with proper spacing */
-img {
-    max-width: 100%;
-    border-radius: 12px;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Specific styling for the bike crash image */
-img[src*="bike_crash_no1.jpg"] {
-    border: 4px solid blue;
-    border-radius: 12px;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Additional margin for better spacing between sections */
