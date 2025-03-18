@@ -60,14 +60,32 @@
     <p>Find us at 1365 Douglas Dr, Carbondale, IL 62901. Ask for Ben Brown!</p>
     <p>Stay safe out there!</p>
 
-    <img id="main-image" src="img_dump/bike_crash_no1.jpg" alt="Bike crash warning" class="responsive-img">
+    <div class="image-container">
+         <img id="main-image" src="img_dump/bike_crash_no1.jpg" alt="Bike crash warning" class="responsive-img">
+    </div>
 
+     <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let mainImage = document.getElementById("main-image");
+
+        mainImage.addEventListener("mouseover", function () {
+            mainImage.src = "crazy_dude.jpg"; // Image changes on hover
+        });
+
+        mainImage.addEventListener("mouseout", function () {
+            mainImage.src = "image1.jpg"; // Reverts when the mouse leaves
+        });
+    });
+</script>
+
+     
     <p><a href="https://www.nhtsa.gov/road-safety/bicycle-safety">Click here for bike safety info</a></p>
 
      <audio autoplay loop>
          <source src="audio_dump/website_theme.mp3" type="audio/mpeg">
          Your browser does not support the audio element.
      </audio>
+
 
 </body>
 </html>
