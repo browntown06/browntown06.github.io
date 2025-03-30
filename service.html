@@ -46,18 +46,95 @@
         </nav>
     </header>
 
-    <div class="container">
-        <h2>Professional Bike Services</h2>
-        <p>Keep your bike in top condition with our expert maintenance and repair services.</p>
-        <p><strong>Services include:</strong></p>
-        <ul>
-            <li>Tune-ups</li>
-            <li>Brake adjustments</li>
-            <li>Wheel truing</li>
-            <li>Gear adjustments</li>
-        </ul>
-        <p>Contact us today to schedule an appointment!</p>
-    </div>
+  <div class="container">
+    <h2>Professional Bike Services</h2>
+    <p>Keep your bike in top condition with our expert maintenance and repair services.</p>
+    
+    <table class="service-table">
+        <caption>Bike Service Pricing</caption>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Standard Price</th>
+                <th>Premium Price</th>
+                <th>Time Estimate</th>
+                <th>Warranty</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Tune-up</td><td>$50</td><td>$80</td><td>1 Hour</td><td>30 Days</td><td>Yes</td></tr>
+            <tr><td>Brake Adjustment</td><td>$20</td><td>$35</td><td>30 Min</td><td>14 Days</td><td>Yes</td></tr>
+            <tr><td>Wheel Truing</td><td>$25</td><td>$40</td><td>45 Min</td><td>30 Days</td><td>Yes</td></tr>
+            <tr><td>Gear Adjustment</td><td>$30</td><td>$50</td><td>40 Min</td><td>30 Days</td><td>Yes</td></tr>
+            <tr><td>Flat Tire Fix</td><td>$15</td><td>$25</td><td>20 Min</td><td>7 Days</td><td>Yes</td></tr>
+            <tr><td>Chain Replacement</td><td>$40</td><td>$60</td><td>45 Min</td><td>30 Days</td><td>Yes</td></tr>
+            <tr><td>Bike Cleaning</td><td>$25</td><td>$45</td><td>30 Min</td><td>None</td><td>Yes</td></tr>
+            <tr><td>Suspension Check</td><td>$35</td><td>$55</td><td>50 Min</td><td>30 Days</td><td>Yes</td></tr>
+            <tr><td>Frame Inspection</td><td>$30</td><td>$50</td><td>45 Min</td><td>None</td><td>Yes</td></tr>
+            <tr><td>Custom Repairs</td><td>Varies</td><td>Varies</td><td>Depends</td><td>Varies</td><td>Yes</td></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Prices are subject to change. Contact us for more details.</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<style>
+    .service-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    .service-table, .service-table th, .service-table td {
+        border: 1px solid black;
+    }
+    
+    .service-table th, .service-table td {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .service-table caption {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    @media (max-width: 470px) {
+        .service-table, .service-table thead, .service-table tbody, .service-table th, .service-table td, .service-table tr {
+            display: block;
+        }
+        
+        .service-table thead tr {
+            display: none;
+        }
+        
+        .service-table tr {
+            margin-bottom: 10px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        .service-table td {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        
+        .service-table td::before {
+            content: attr(data-label);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    }
+</style>
+
 
     <img class="no-style" src="img_dump/static-image.jpg" alt="Helping hands">
     
