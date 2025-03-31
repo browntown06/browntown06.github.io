@@ -30,10 +30,6 @@ body {
     background-repeat: no-repeat;
 }
 
-* {
-    color: red;
-}
-
 img.no-style {
     all: unset;  /* This resets all styles for this element */
 }
