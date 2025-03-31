@@ -23,11 +23,6 @@ body {
     align-items: center;
     min-height: 100vh;
     justify-content: flex-start;
-
-    background-image: url('img_dump/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 img.no-style {
