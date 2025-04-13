@@ -45,73 +45,187 @@
         </nav>
     </header>
 
-    <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Contact Us - Bicycle Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      background: #fff;
+      margin: auto;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem 2rem;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-start;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 0.6rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="reset"] {
+      background-color: #6c757d;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
-  <h1>Contact Our Bicycle Shop</h1>
-  <form action="response.html" method="get">
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+  <div class="container">
+    <h1>Contact Our Bicycle Shop</h1>
+    <form action="response.html" method="get">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password" required><br><br>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
 
-    <label for="fullname">Full Name:</label><br>
-    <input type="text" id="fullname" name="fullname" required><br><br>
+      <div>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
 
-    <label for="address">Address:</label><br>
-    <input type="text" id="address" name="address" required><br><br>
+      <div>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+      </div>
 
-    <label for="city">City:</label><br>
-    <input type="text" id="city" name="city" required><br><br>
+      <div>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required>
+      </div>
 
-    <label for="state">State:</label><br>
-    <select id="state" name="state" required>
-      <option value="">Select a state</option>
-      <option value="AL">Alabama</option>
-      <option value="AK">Alaska</option>
-      <option value="AZ">Arizona</option>
-      <option value="AR">Arkansas</option>
-      <option value="CA">California</option>
-      <option value="CO">Colorado</option>
-      <option value="CT">Connecticut</option>
-      <option value="DE">Delaware</option>
-      <option value="FL">Florida</option>
-      <option value="GA">Georgia</option>
-      <option value="HI">Hawaii</option>
-      <option value="ID">Idaho</option>
-      <option value="IL">Illinois</option>
-      <!-- Add the rest if needed -->
-    </select><br><br>
+      <div>
+        <label for="state">State</label>
+        <select id="state" name="state" required>
+          <option value="">Select a state</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+        </select>
+      </div>
 
-    <label for="zip">ZIP Code:</label><br>
-    <input type="text" id="zip" name="zip" pattern="\d{5}" required><br><br>
+      <div>
+        <label for="zip">ZIP Code</label>
+        <input type="text" id="zip" name="zip" pattern="\d{5}" required>
+      </div>
 
-    <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="\d{10}" required>
+      </div>
 
-    <label for="date">Creation Date:</label><br>
-    <input type="date" id="date" name="date" required><br><br>
+      <div>
+        <label for="date">Creation Date</label>
+        <input type="date" id="date" name="date" required>
+      </div>
 
-    <label for="message">Message (50-200 characters):</label><br>
-    <textarea id="message" name="message" minlength="50" maxlength="200" required></textarea><br><br>
+      <div class="full-width">
+        <label for="message">Message (50-200 characters)</label>
+        <textarea id="message" name="message" minlength="50" maxlength="200" required></textarea>
+      </div>
 
-    <label>Type of Inquiry:</label><br>
-    <input type="radio" name="inquiry" value="general" required> General<br>
-    <input type="radio" name="inquiry" value="sales"> Sales<br>
-    <input type="radio" name="inquiry" value="support"> Support<br><br>
+      <div class="radio-group">
+        <label>Type of Inquiry</label>
+        <input type="radio" name="inquiry" value="general" required> General
+        <input type="radio" name="inquiry" value="sales"> Sales
+        <input type="radio" name="inquiry" value="support"> Support
+      </div>
 
-    <label>Type of Item:</label><br>
-    <input type="radio" name="item" value="watch" required> Watch<br>
-    <input type="radio" name="item" value="bike"> Bike<br>
-    <input type="radio" name="item" value="accessory"> Accessory<br><br>
+      <div class="radio-group">
+        <label>Type of Item</label>
+        <input type="radio" name="item" value="watch" required> Watch
+        <input type="radio" name="item" value="bike"> Bike
+        <input type="radio" name="item" value="accessory"> Accessory
+      </div>
 
-    <input type="submit" value="Send">
-    <input type="reset" value="Reset">
+      <div class="buttons full-width">
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
   </form>
 </body>
 </html>
