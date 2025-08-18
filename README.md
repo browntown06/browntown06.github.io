@@ -1,4 +1,3 @@
 # browntown06.github.io
-
-Howdy howdy!
-The URL is browntown06.github.io
+My first steps in HTML!  
+URL: https://browntown.github.io
